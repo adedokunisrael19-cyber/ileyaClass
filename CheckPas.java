@@ -1,13 +1,16 @@
 import java.util.Scanner; 
 public class CheckPass{
     public static void main(String[] args){
-    String Password = input.nextLine();
+   
     Scanner input = new Scanner(System.in);  
-        while(Password != "Pass"){
-            System.out.print("enter anumber:");
-            
-             System.out.print(Password);
-        }
-    
+    String CorrectPassword = "correct";
+   do { System.out.print("enter anumber:");
+    String UserPassword = input.nextLine();
+
+        if(!UserPassword .equals(CorrectPassword)){
+            System.out.print("Wrong password");
+            }
+        } while (!UserPassword .equals(CorrectPassword));
+        System.out.print("right password");
     }
 }
